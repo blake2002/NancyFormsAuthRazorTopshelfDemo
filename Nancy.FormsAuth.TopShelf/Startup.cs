@@ -8,7 +8,7 @@ namespace NcyFormsAuthWithTopShelf
         {
 
             application
-                //.Use(typeof(OwinLogger))
+                .Use(typeof(OwinLogger))
                 .UseNancy();
         }
     }

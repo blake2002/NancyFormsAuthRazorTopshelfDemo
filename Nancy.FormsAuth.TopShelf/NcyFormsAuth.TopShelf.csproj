@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="OwinLogger.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\MyUserIdentity.cs" />
     <Compile Include="Modules\LoginModule.cs" />
