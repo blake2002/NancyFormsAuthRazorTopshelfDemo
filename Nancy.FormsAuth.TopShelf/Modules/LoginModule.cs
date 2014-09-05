@@ -1,7 +1,8 @@
-﻿using System.Dynamic;
-using Nancy;
+﻿using Nancy;
+using Nancy.Session;
 using Nancy.Authentication.Forms;
 using System;
+using System.Dynamic;
 
 namespace NcyFormsAuthWithTopShelf.Modules
 {
@@ -13,7 +14,7 @@ namespace NcyFormsAuthWithTopShelf.Modules
                 {
                     dynamic model = new ExpandoObject();
                     model.Errored = false;
-                    return View["Login"];
+                    return View["Login", model];
                 };
 
             Get["/logout"] = parameters =>

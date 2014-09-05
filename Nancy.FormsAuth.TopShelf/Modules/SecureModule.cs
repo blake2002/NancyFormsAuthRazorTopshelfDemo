@@ -1,7 +1,5 @@
-﻿using System;
-using Nancy;
+﻿using Nancy;
 using Nancy.Security;
-using Nancy.Session;
 using System.Dynamic;
 
 namespace NcyFormsAuthWithTopShelf.Modules
